@@ -28,7 +28,12 @@ header{
 .site-header, .sub-header { text-align: center; }
 .nav { justify-content: center; }
 
-#content { text-align: center; }
+#content{ 
+	text-align: center; 
+	max-width: 62rem; 
+	margin: 0 auto; 
+	padding: 1rem 
+}
 
 .nav { 
 	justify-content: center; 
