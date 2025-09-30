@@ -51,7 +51,7 @@ p { margin: 0.75rem 0; }
 
 .tiny-form fieldset { 
 	border: 1px solid #2a2c5e; 
-	padding: 4rem;
+	padding: 1rem;
 	border-radius: 20px;
 	background: #15163a;
 }
