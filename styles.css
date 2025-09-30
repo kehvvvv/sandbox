@@ -26,7 +26,6 @@ header{
 }
 
 .site-header, .sub-header { text-align: center; }
-.nav { justify-content: center; }
 
 #content{ 
 	text-align: center; 
@@ -66,7 +65,7 @@ p { margin: 0.75rem 0; }
 	text-align: center; 
 	color: var(--muted); 
 	font-size: 1rem; 
-	margin-top: 0.25rem 
+	margin-top: 1rem 
 }
 
 .meter progress { 
