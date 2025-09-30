@@ -25,7 +25,14 @@ header{
 	border-bottom: 1px solid #2a2c5e
 }
 
-.site-header, .sub-header { text-align: center; }
+.site-header, .sub-header { 
+	text-align: center;
+	padding: 1rem;
+}
+.tagline{ 
+	color: var(--muted);
+	margin-top: 0.50rem;
+}
 
 #content{ 
 	text-align: center; 
