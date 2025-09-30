@@ -2,6 +2,18 @@
 Where: "Today's Dopamine Dial" section
 What: <progress> element
 How: Native progress meter to visualize an estimated dopamine dial. Value set between 0-1
+
+Where: <figure class="hero"> on home page
+What: fetchpriority="high"
+How: Signals browser to fetch this image sooner to improve precieved load.
+
+Where: "Focus Snapshot" section
+What: <fieldset> +  <legend> 
+How: <fieldset> Groups related inputs for accessibility. <legend> labels the group for visual users.
+
+Where: First radio input in "Focus Snapshot"
+What: autofocus
+How: Puts the focus on the first of three options (left -> right) on page load.
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -27,6 +39,7 @@ How: Native progress meter to visualize an estimated dopamine dial. Value set be
     </nav>
 
     <figure clas="hero">
+      <!--fethcpriority="high"-->
       <img 
         src="colorful-brain.jpg"
         alt="Abstract colorful waves to represent brain chemistry"
@@ -51,6 +64,7 @@ How: Native progress meter to visualize an estimated dopamine dial. Value set be
     <section class="meter">
       <h2>Today's Dopamine Dial</h2>
       <p class="muted"> A simple visual of how "charged" you feel right now.</p>
+      <!--progress-->
       <progress value="0.6" max="1" aria-label="Estimated dopamine dial at sixty percent"></progress>
     </section>
 
@@ -62,6 +76,19 @@ How: Native progress meter to visualize an estimated dopamine dial. Value set be
       <li><a href="howto.html">Learn to manage</a></li>
     </ul>
   </section>
+    <section class="tiny-form">
+      <h2>Focus Snapshot</h2>
+      <!-- <fieldset> + <legend> -->
+      <form>
+        <fieldset>
+          <legend>Right now I feel…</legend>
+          <!-- autofocus on the first input -->
+          <label><input type="radio" name="focus" value="calm" autofocus> Calm & steady</label>
+          <label><input type="radio" name="focus" value="wired"> Wired & restless</label>
+          <label><input type="radio" name="focus" value="meh"> Down & distracted</label>
+        </fieldset>
+      </form>
+    </section>
   </main>
 </body>
 </html>
