@@ -26,6 +26,7 @@ header{
 }
 
 .site-header, .sub-header { 
+	text-align: left;
 	padding: 1rem;
 }
 .tagline{ 
@@ -40,9 +41,12 @@ header{
 }
 
 .nav { 
-	justify-content: center; 
-	margin-top: 0.5rem; 
-	display: flex; gap: 1rem; 
+	justify-content: flex-start;
+	padding-left: 1rem;
+	list-style: none;
+	margin-top: 0.5rem 0 0; 
+	display: flex; 
+	gap: 1rem; 
 }
 .nav a[aria-current="page"] { 
 	color: var(--muted); 
@@ -62,8 +66,13 @@ p { margin: 0.75rem 0; }
 
 .hero{ 
 	max-width: 900px;
-	margin: 0 auto;
+	margin: 1rem auto;
 }
+
+.hero{ 
+	display: block;
+	width: 100%;
+	height: auto;
 
 .hero figcaption,
 .inline figcaption{ 
