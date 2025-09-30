@@ -73,6 +73,7 @@ p { margin: 0.75rem 0; }
 	display: block;
 	width: 100%;
 	height: auto;
+}
 
 .hero figcaption,
 .inline figcaption{ 
